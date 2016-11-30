@@ -1,1 +1,17 @@
 1.
+ 1.1- A premaster secret e encriptada com a chave publica de modo a proteger o seu envio entre o cliente e o servidor.
+Garante a sua integridade ao calcular uma mensagem Digest. Garante confidencialidade graças á cifra que utiliza.
+ 1.2- É importante visto que o conceito da mesma acenta sobre o facto de se a chave privada for compremetida a chave de sessão não é compremetida.O establecimento  de chaves garante esta funcionalidade.(not sure)
+ 1.3 - Usa quatro chaves, cada canal consiste em 1 conjunto de duas chaves.Nao sei o motivo
+
+
+
+4- 
+ 4.1-Sim continua a aparecer, depende da implementação, mas da primeira vez mesmo que ja esteja autenticado o formulário continua a aparecer
+ 4.2-OAuth 2.0 queria ir em contra estes criterios:
+	Queria permitir a programadores em usar não-HTTPS redirecionados URI, porque nem todos os programadores tem um servidor SSL ativado e se têm provavelmente não esta configurado.
+	E não queria que os atacantes fossem capazes de roubar acessos/fazer refresh aos tokens ao interceptar pedidos.
+
+5-
+ 5.1-Para autenticar o user, pois um ID Token é um conjunto de asserções sobre um utilizador  autenticado
+ 5.2-
